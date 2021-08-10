@@ -53,7 +53,9 @@ public class VideoAdapter extends RecyclerView.Adapter<VideoAdapter.VideoViewHol
             videoWeb = (WebView) itemView.findViewById(R.id.videoWebView);
 
             videoWeb.getSettings().setJavaScriptEnabled(true);
+            videoWeb.setWebChromeClient(new WebChromeClient() {
 
+            } );
         }
     }
 

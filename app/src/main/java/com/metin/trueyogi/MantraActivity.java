@@ -48,7 +48,7 @@ public class MantraActivity extends AppCompatActivity {
 
         mantra = new ArrayList<>();
 
-
+        sayac = getSharedPreference("sayac",0);
         a[0] = getSharedPreference("a0",11);
         a[1] = getSharedPreference("a1",11);
         a[2] = getSharedPreference("a2",11);
@@ -104,6 +104,8 @@ public class MantraActivity extends AppCompatActivity {
                     //mantratxt.setText(dogruSoru.getMantra());
                     alertGoster2();
                     a[sayac] = number;
+                    sayac++;
+                    setSharedPreference("sayac",sayac);
                     setSharedPreference("a0",a[0]);
                     setSharedPreference("a1",a[1]);
                     setSharedPreference("a2",a[2]);

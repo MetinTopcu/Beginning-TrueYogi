@@ -143,10 +143,12 @@ public class MoodTrackingActivity extends AppCompatActivity {
         // Quote in Morning at 08:32:00 AM
         Calendar calendar = Calendar.getInstance();
 
+        Date currentTime = Calendar.getInstance().getTime();
+        //Log.e("şuankizaman","saat="+currentTime.getHours());
+        //Log.e("şuankizaman","dakika="+currentTime.getMinutes());
 
-
-        calendar.set(Calendar.HOUR_OF_DAY, 12);
-        calendar.set(Calendar.MINUTE, 50);
+        calendar.set(Calendar.HOUR_OF_DAY, currentTime.getHours());
+        calendar.set(Calendar.MINUTE, currentTime.getMinutes()+5);
         calendar.set(Calendar.SECOND, 0);
         calendar.set(Calendar.MILLISECOND, 0);
 
