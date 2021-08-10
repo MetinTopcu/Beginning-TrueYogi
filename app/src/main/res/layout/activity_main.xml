@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainarka2"
+    android:backgroundTint="#FFFFFF"
+    android:backgroundTintMode="multiply"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="@string/trueyogi"
+        android:textColor="#FFFFFF"
+        android:textSize="42sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="105dp"
+        android:layout_height="350dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.426"
+        app:srcCompat="@drawable/yogi" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="144dp"
+        android:layout_height="139dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintStart_toEndOf="@+id/momentbtn"
+        app:layout_constraintTop_toBottomOf="@+id/sunpositionbtn"
+        app:srcCompat="@drawable/home" />
+
+    <ImageButton
+        android:id="@+id/momentbtn"
+        android:layout_width="64dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mooncyclebtn"
+        app:srcCompat="@drawable/semb1" />
+
+    <ImageButton
+        android:id="@+id/moodtrackingbtn"
+        android:layout_width="67dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/momentbtn"
+        app:srcCompat="@drawable/semb4" />
+
+    <ImageButton
+        android:id="@+id/mantrabtn"
+        android:layout_width="70dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="-16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/moodtrackingbtn"
+        app:srcCompat="@drawable/semb5" />
+
+    <ImageButton
+        android:id="@+id/sunpositionbtn"
+        android:layout_width="66dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="110dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:srcCompat="@drawable/semb3" />
+
+    <ImageButton
+        android:id="@+id/mooncyclebtn"
+        android:layout_width="65dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="-8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sunpositionbtn"
+        app:srcCompat="@drawable/semb2" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

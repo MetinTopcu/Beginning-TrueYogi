@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">TrueYogi</string>
+    <string name="trueyogi">TRUEYOGI</string>
+    <string name="mantra">Mantra</string>
+    <string name="how_are_you">How Are You ?</string>
+    <string name="awful">Awful</string>
+    <string name="bad">Bad</string>
+    <string name="good">Good</string>
+    <string name="meh">Meh</string>
+    <string name="rad">Rad</string>
+</resources>
